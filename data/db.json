@@ -1,0 +1,94 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "first_name": "Marrilee",
+      "last_name": "Le Clercq",
+      "email": "mleclercq0@me.com",
+      "salary": 10000,
+      "date": "March 6, 2019",
+      "country": "usa"
+    },
+    {
+      "first_name": "Nancey1",
+      "last_name": "Garioch2",
+      "country": "egypt",
+      "salary": "5006",
+      "email": "ngarioch1@me.com",
+      "date": "April 6, 2020",
+      "id": 2
+    },
+    {
+      "first_name": "Malanie",
+      "last_name": "Decroix",
+      "email": "ngch1@me.com",
+      "date": "April 6, 2022",
+      "country": "usa",
+      "salary": 8000,
+      "id": 3
+    },
+    {
+      "id": 4,
+      "first_name": "Darcee",
+      "last_name": "Milverton",
+      "email": "dmilveton3@me.com",
+      "salary": 15000,
+      "date": "March 15, 2021",
+      "country": "canada"
+    },
+    {
+      "id": 5,
+      "first_name": "Robbie",
+      "last_name": "Itzakovitz",
+      "email": "ritzakvitz4@me.com",
+      "salary": 9000,
+      "date": "May 10, 2023",
+      "country": "germany"
+    },
+    {
+      "id": 6,
+      "first_name": "Courtney",
+      "last_name": "Gaynor",
+      "email": "cgaynor5@me.com",
+      "salary": 12000,
+      "date": "May 11, 2023",
+      "country": "egypt"
+    },
+    {
+      "id": 7,
+      "first_name": "Dorelia",
+      "last_name": "Kohneke",
+      "email": "dkohneke6@me.com",
+      "salary": 14000,
+      "date": "May 05, 2023",
+      "country": "germany"
+    },
+    {
+      "id": 8,
+      "first_name": "Wylma",
+      "last_name": "Lidgerton",
+      "email": "wlidgerton7@me.uk",
+      "salary": 17000,
+      "date": "May 10, 2019",
+      "country": "germany"
+    },
+    {
+      "id": 9,
+      "first_name": "Lind",
+      "last_name": "Carloni",
+      "email": "carloni8@is.gd",
+      "salary": 20000,
+      "date": "May 19, 2019",
+      "country": "canada"
+    },
+    {
+      "id": 10,
+      "first_name": "Palm",
+      "last_name": "Vanstone",
+      "email": "pvanstone9@sate.gov",
+      "salary": 13000,
+      "date": "May 10, 2019",
+      "country": "canada"
+    }
+  ]
+}

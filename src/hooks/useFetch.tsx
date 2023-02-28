@@ -18,6 +18,21 @@ const useFetch = (url: string) => {
       setData(fetchedData);
     }
   };
+  const filterItems = (value: any) => {
+    if (!!data && !!value) {
+      console.log(data);
+      const filteredData = data.filter((el: any) => {
+        return (
+          el.name === value.name &&
+          el.phone === value.phone &&
+          el.company === value.company
+        );
+      });
+      setData(filteredData);
+    } else {
+      setData(fetchedData);
+    }
+  };
   useEffect(() => {
     const abortCont = new AbortController();
 
@@ -51,7 +66,7 @@ const useFetch = (url: string) => {
     return () => abortCont.abort();
   }, [url]);
 
-  return { data, isPending, error, searchItems };
+  return { data, isPending, error, searchItems, filterItems };
 };
 
 export default useFetch;

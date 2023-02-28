@@ -9,10 +9,11 @@ type DialogType = {
 const Dialog = ({ data }: DialogType) => {
   const navigate = useNavigate();
   const initialState = {
-    first_name: data?.first_name,
-    last_name: data?.last_name,
+    name: data?.name,
     country: data?.country,
     salary: data?.salary,
+    phone: data?.phone,
+    company: data?.company,
   };
   const [values, setValues] = useForm(initialState);
   const handleUpdate = (e: any) => {
@@ -20,7 +21,7 @@ const Dialog = ({ data }: DialogType) => {
     fetch(`${import.meta.env.VITE_APP_API_ROOT}/employees/${data.id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...values, email: data?.email, date: data?.date }),
+      body: JSON.stringify({ ...values, date: data?.date }),
     }).then(() => {
       navigate("/");
     });
@@ -29,26 +30,34 @@ const Dialog = ({ data }: DialogType) => {
     <div className="modal">
       <div className="modal-content">
         <form onSubmit={(e) => handleUpdate(e)}>
-          <label htmlFor="first_name">First Name</label>
+          <label htmlFor="name">Full Name</label>
           <input
             type="text"
-            id="first_name"
-            name="first_name"
+            id="name"
+            name="name"
             placeholder="Your name.."
             onChange={setValues}
-            defaultValue={values.first_name}
+            defaultValue={values.name}
           />
 
-          <label htmlFor="last_name">Last Name</label>
+          <label htmlFor="company">Company</label>
           <input
             type="text"
-            id="last_name"
-            name="last_name"
-            placeholder="Your last name.."
+            id="company"
+            name="company"
+            placeholder="Your company name.."
             onChange={setValues}
-            defaultValue={values.last_name}
+            defaultValue={values.company}
           />
-
+          <label htmlFor="phone">Phone Number</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Your  phone.."
+            onChange={setValues}
+            defaultValue={values.phone}
+          />
           <label htmlFor="country">Country</label>
           <select
             id="country"

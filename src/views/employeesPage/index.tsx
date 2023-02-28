@@ -2,6 +2,7 @@ import React from "react";
 import useFetch from "../../hooks/useFetch";
 import SortableTable from "../../components/table/SortableTable";
 import SearchBar from "../../components/searchBar";
+import FiltersForm from "../../components/filtersForm";
 
 export default function EmployeesPage() {
   const {
@@ -9,7 +10,9 @@ export default function EmployeesPage() {
     isPending,
     data: employees,
     searchItems,
+    filterItems,
   } = useFetch(`${import.meta.env.VITE_APP_API_ROOT}/employees`);
+
   return (
     <>
       {error && <div>{error}</div>}
@@ -17,7 +20,10 @@ export default function EmployeesPage() {
       {!!employees && (
         <>
           <SearchBar searchItems={searchItems} />
-          <SortableTable data={employees ?? []} />
+          <div className="table-container">
+            <FiltersForm filterItems={filterItems} />
+            <SortableTable data={employees ?? []} />
+          </div>
         </>
       )}
     </>

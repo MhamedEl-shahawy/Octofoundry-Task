@@ -30,9 +30,7 @@ const EmployeeDetails = () => {
       {error && <div>{error}</div>}
       {!!employee && (
         <div className="container">
-          <h2>
-            {employee.first_name} {employee.last_name}
-          </h2>
+          <h2>{employee.name}</h2>
           <p>Monthly salary: {employee.salary}</p>
           <div>created date: {employee.date}</div>
           <button

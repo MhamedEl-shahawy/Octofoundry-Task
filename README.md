@@ -9,7 +9,7 @@ Simple employees app to share employee details with one another.
 - Users can update employees details.
 - Users can delete employees details.
 
-## Framework
+## Framework and Library
 
 - [ReactJS](https://reactjs.org/).
 - [JSONServer](https://www.npmjs.com/package/json-server)
@@ -22,6 +22,7 @@ Simple employees app to share employee details with one another.
 ## Installation
 
 - First clone app Ensure any install or build dependencies have installed
+- All commands can running within `yarn or npm`
 
 ### Running App for local development
 
@@ -33,9 +34,11 @@ Simple employees app to share employee details with one another.
 
 ### `npx json-server --watch data/db.json  --port 8000`
 
+### `change .env api root to http://localhost:8000/`
+
 ### Running App for build production or deploy app
 
-### `npm run build`
+### `yarn run build`
 
 - In the project directory, to run Fake api data and live demo:
 

@@ -2,26 +2,26 @@
   "employees": [
     {
       "id": 1,
-      "first_name": "Marrilee",
-      "last_name": "Le Clercq",
-      "email": "mleclercq0@me.com",
+      "name": "Marrilee Clercq",
+      "phone": "+201115478497",
       "salary": 10000,
       "date": "March 6, 2019",
-      "country": "usa"
+      "country": "usa",
+      "company": "stc"
     },
     {
-      "first_name": "Nancey1",
-      "last_name": "Garioch2",
+      "name": "Nancey1 Garioch2",
       "country": "egypt",
+      "phone": "+201115008497",
       "salary": "5006",
-      "email": "ngarioch1@me.com",
+      "company": "google",
       "date": "April 6, 2020",
       "id": 2
     },
     {
-      "first_name": "Malanie",
-      "last_name": "Decroix",
-      "email": "ngch1@me.com",
+      "name": "Malanie Decroix",
+      "company": "adobe",
+      "phone": "+201015478497",
       "date": "April 6, 2022",
       "country": "usa",
       "salary": 8000,
@@ -29,64 +29,64 @@
     },
     {
       "id": 4,
-      "first_name": "Darcee",
-      "last_name": "Milverton",
-      "email": "dmilveton3@me.com",
+      "name": "Darcee Milverton",
+      "company": "google",
       "salary": 15000,
+      "phone": "+996561548497",
       "date": "March 15, 2021",
       "country": "canada"
     },
     {
       "id": 5,
-      "first_name": "Robbie",
-      "last_name": "Itzakovitz",
-      "email": "ritzakvitz4@me.com",
+      "name": "Robbie Itzakovitz",
+      "company": "twitter",
       "salary": 9000,
+      "phone": "+57561548497",
       "date": "May 10, 2023",
       "country": "germany"
     },
     {
       "id": 6,
-      "first_name": "Courtney",
-      "last_name": "Gaynor",
-      "email": "cgaynor5@me.com",
+      "name": "Courtney Gaynor",
+      "company": "facebook",
+      "phone": "+57561540000",
       "salary": 12000,
       "date": "May 11, 2023",
       "country": "egypt"
     },
     {
       "id": 7,
-      "first_name": "Dorelia",
-      "last_name": "Kohneke",
-      "email": "dkohneke6@me.com",
+      "name": "Dorelia Kohneke",
+      "company": "facebook",
       "salary": 14000,
+      "phone": "+57561540007",
       "date": "May 05, 2023",
       "country": "germany"
     },
     {
       "id": 8,
-      "first_name": "Wylma",
-      "last_name": "Lidgerton",
-      "email": "wlidgerton7@me.uk",
+      "name": "Wylma Lidgerton",
+      "company": "facebook",
       "salary": 17000,
+      "phone": "+966561548490",
       "date": "May 10, 2019",
       "country": "germany"
     },
     {
       "id": 9,
-      "first_name": "Lind",
-      "last_name": "Carloni",
-      "email": "carloni8@is.gd",
+      "name": "Lind Carloni",
+      "company": "google",
       "salary": 20000,
+      "phone": "+50560048497",
       "date": "May 19, 2019",
       "country": "canada"
     },
     {
       "id": 10,
-      "first_name": "Palm",
-      "last_name": "Vanstone",
-      "email": "pvanstone9@sate.gov",
+      "name": "Palm Vanstone",
+      "company": "adobe",
       "salary": 13000,
+      "phone": "+74560008497",
       "date": "May 10, 2019",
       "country": "canada"
     }

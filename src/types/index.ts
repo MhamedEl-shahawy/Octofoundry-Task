@@ -1,9 +1,9 @@
 export type Employee = {
   id: number;
-  first_name: string;
-  last_name: string;
-  email: string;
+  name: string;
   salary: number;
   country: string;
   date: string;
+  phone: string;
+  company: string;
 };

@@ -3,12 +3,12 @@ import { useNavigate } from "react-router-dom";
 
 type Data = {
   id: number;
-  first_name: string;
-  last_name: string;
-  email: string;
+  name: string;
   salary: number;
   country: string;
   date: string;
+  phone: string;
+  company: string;
 }[];
 
 type SortKeys = keyof Data[0];
@@ -63,14 +63,14 @@ function SortButton({
 }
 
 function SortableTable({ data }: { data: Data | [] }) {
-  const [sortKey, setSortKey] = useState<SortKeys>("last_name");
+  const [sortKey, setSortKey] = useState<SortKeys>("id");
   const [sortOrder, setSortOrder] = useState<SortOrder>("ascn");
   const navigate = useNavigate();
   const headers: { key: SortKeys; label: string }[] = [
     { key: "id", label: "ID" },
-    { key: "first_name", label: "First name" },
-    { key: "last_name", label: "Last name" },
-    { key: "email", label: "Email" },
+    { key: "name", label: "Full name" },
+    { key: "company", label: "Company name" },
+    { key: "phone", label: "Phone Number " },
     { key: "salary", label: "Salary" },
     { key: "country", label: "Country" },
     { key: "date", label: "Date" },
@@ -117,9 +117,9 @@ function SortableTable({ data }: { data: Data | [] }) {
               onClick={() => navigate(`/employees/${person.id}`)}
             >
               <td>{person.id}</td>
-              <td>{person.first_name}</td>
-              <td>{person.last_name}</td>
-              <td>{person.email}</td>
+              <td>{person.name}</td>
+              <td>{person.company}</td>
+              <td>{person.phone}</td>
               <td>{person.salary}</td>
               <td>{person.country}</td>
               <td>{person.date}</td>

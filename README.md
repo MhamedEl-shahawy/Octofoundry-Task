@@ -8,6 +8,7 @@ Simple employees app to share employee details with one another.
 - a full fake data REST API is built with json-server.
 - Users can update employees details.
 - Users can delete employees details.
+- Users can filter employees based on name , email and phone number.
 
 ## Framework and Library
 
